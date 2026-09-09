@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Sampleinput {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        HashSet<Integer> set=new HashSet<>();
+        set.add(10);
+        set.add(11);
+        set.add(5);
+    
+        for(int i=0;i<n;i++){
+            int value=sc.nextInt();
+             set.add(value);
+        }
+       
+        System.out.print(set+" ");
+        System.out.println(set.contains(110));
+        System.out.print(set.size());
+        System.out.println(set.remove(5));
+    }
+    
+}
